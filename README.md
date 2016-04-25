@@ -15,14 +15,14 @@ The current version of SmokePing Manager simply:
 	- Allows you to reload (HUP) the process. This is done with the assistanc of cronjob.
 
 ## Future Version Roadmap
-	-	RESTful back-end Angular front-end
-	-	Pertinent information stored in database
-	-	Config file gets generated dynamically from information stored in database
-	-	Responsive front-end with field, format and syntax validation 
+	- RESTful back-end Angular front-end
+	- Pertinent information stored in database
+	- Config file gets generated dynamically from information stored in database
+	-Responsive front-end with field, format and syntax validation 
 
 ## Install it
 
 	- Clone the dir into your web server. Requires PHP.
 	- copy the HUPME dir and contents to /opt/smokeping/etc/
-	- add a conjob which runs /opt/smokeping/etc/HUPME/hupme.sh every minute
+	- add a cronjob which runs /opt/smokeping/etc/HUPME/hupme.sh every minute
 
