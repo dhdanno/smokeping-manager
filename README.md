@@ -9,6 +9,7 @@ This project is not affiliated. Just something I put together because managing t
 
 ## What it does (v1.0)
 The current version of SmokePing Manager simply:
+
 	- Presents the config file and allows editing and saving on the server which runs smokeping
 	- Makes a copy of the exiting config file, just in case.
 	- Allows you to reload (HUP) the process. This is done with the assistanc of cronjob.
