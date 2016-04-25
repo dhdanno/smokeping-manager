@@ -1,5 +1,9 @@
 #!/bin/bash
 
+cd /opt/smokeping/etc/HUPME
+
+# This should be on a minutely cronjob
+
 HUP=`cat HUPME`
 
 if [ $HUP -eq 1 ]; then

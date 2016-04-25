@@ -19,3 +19,10 @@ The current version of SmokePing Manager simply:
 	-	Pertinent information stored in database
 	-	Config file gets generated dynamically from information stored in database
 	-	Responsive front-end with field, format and syntax validation 
+
+## Install it
+
+	- Clone the dir into your web server. Requires PHP.
+	- copy the HUPME dir and contents to /opt/smokeping/etc/
+	- add a conjob which runs /opt/smokeping/etc/HUPME/hupme.sh every minute
+

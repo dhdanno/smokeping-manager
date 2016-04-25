@@ -29,18 +29,21 @@ class Welcome extends CI_Controller {
 
 
 			if ( ! write_file('/opt/smokeping/etc/config', $_POST['file'])) {
-			     echo 'Unable to write the file';
+			    echo 'Unable to write the file';
+			   	echo '<meta http-equiv="refresh" content="3;URL=\'/\'" />';
 			} else {
-			     echo 'File written!';
+				// Please forgive me for this nasty version 1 hack.
+			    echo 'File written! Reload the process to take effect.';
+			    echo '<meta http-equiv="refresh" content="3;URL=\'/\'" />';
 			}
 
 
 		} else {
 		    echo "nothing posted";
+		  	echo '<meta http-equiv="refresh" content="3;URL=\'/\'" />';
 		}
 
 	}
-
 
 	/*
 		HUP the process
@@ -52,10 +55,12 @@ class Welcome extends CI_Controller {
 		// exec("kill -HUP 14376")
 
 
-		if (write_file('/opt/smokeping/etc/HUPME', "1")) {
-			echo "process gonna get hupped";
+		if (write_file('/opt/smokeping/etc/HUPME/HUPME', "1")) {
+			echo "process gonna get hupped, wait for it";
+			echo '<meta http-equiv="refresh" content="3;URL=\'/\'" />';
 		} else {
 			echo "failed";
+			echo '<meta http-equiv="refresh" content="3;URL=\'/\'" />';
 		}
 	}
 
